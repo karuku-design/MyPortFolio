@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Ann Karuku</title>
+        <!-- <link rel = "icon" href ="myLogo.png" type = "image/x-icon">
+        <script src="https://kit.fontawesome.com/9805d8d0f3.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="style.css"> -->
+
+    </head>
+    <body>
+       <!-- <h1 >Am a title</h1> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum ut labore fuga 
+               Sit maiores <a href="#"> vero pariatur ex</a> odio voluptas cupiditate ipsam culpa 
+                illum eligendi et</p>
+                <a href="#"> vero pariatur ex</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum ut labore fuga 
+                    Sit maiores <a href="#"> vero pariatur ex</a> odio voluptas cupiditate ipsam culpa 
+                     illum eligendi et</p> -->
+
+        <!-- <button>Dont press!</button>
+        <a href="http//:google.com">Link to google</a>
+        <form action="">
+           <label >Your Name:<input type="text" value="" name=""></label> 
+           <input type="submit">
+
+        </form>
+
+        <h2>I am heading 2</h2> -->
+
+        <!-- <h1>Resize the window and watch the console</h1> -->
+
+       <!-- <div><p>Am a paragraph</p></div>
+        <button>add paragraph</button>
+        <button>remove paragraph</button> -->
+
+        <h1>Am a form title</h1>
+        <form action="">
+            <label >Enter Num:<input type="number"></label>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+        //   var changer=document.getElementsByTagName("a");
+        //   for(var i=0;i<changer.length;i++){
+        //     var link=changer[i].getAttribute('href');
+        //     if(link==="#"){
+        //         changer[i].innerHTML="I am cool!";
+        //     }
+        //   }
+
+        // var changer=document.querySelector("button");
+        // changer.onclick=function (){
+        //     alert("Hiya i said dont press! ");
+        // };
+
+        // var changer=document.querySelector("button");
+        // changer.addEventListener('click',function(evt){
+        //     evt.target.style.backgroundColor="red";
+        //     alert("I said dont");
+        // })
+        
+        // var link=document.querySelector("a");
+        // link.addEventListener("click",function(evt){
+        //     evt.preventDefault();
+        //     alert("No google for you");
+        // })
+
+        // var myForm=document.querySelector("form");
+        // myForm.addEventListener("submit",function(evt){
+        //     evt.preventDefault;
+        //     var formData=document.querySelector("input").value;
+        //     alert(formData);
+        // })
+
+        // var heading=document.querySelector("h2");
+        // var heading=document.querySelector("div");
+
+            // window.addEventListener('resize',function(){
+            //     console.log(`The window width is ${window.innerWidth}`);
+            //     console.log(`The window Height is ${window.innerHeight}`);
+            // })
+
+            // document.addEventListener('keydown',function(evt){
+            //     alert(`${evt.key} key was pressed`);
+            // })
+
+                // var ptag=document.getElementsByTagName("p");
+                // var btn=document.querySelector("button");
+
+                // btn.addEventListener('click',function(){
+                //     for(var i=0;i<ptag.length;i++){
+                //         ptag[i].style.color="green";
+                // }
+                    
+                // });
+
+                // var divTag=document.querySelector('div');
+                // var btn=document.querySelectorAll('button')[0];
+                // var btnDelete=document.querySelectorAll('button')[1];
+                // var numOfP=1;
+
+                // btn.addEventListener('click',function(){
+                //     numOfP++;
+                //     var newP=document.createElement('p');
+                //     var pText=document.createTextNode(`A new paragraph ${numOfP}`);
+                //     newP.appendChild(pText);
+                //     divTag.appendChild(newP);
+                // });
+               
+                // btnDelete.addEventListener('click',function(){
+                //     var rmv=document.querySelectorAll('p');
+                //     divTag.removeChild(divTag.children[rmv.length-1]);
+                // });
+
+                
+                
+                var head1=document.querySelector("h1");
+                var myForm=document.querySelector("form");
+                myForm.addEventListener("submit",function(evt){
+                    evt.preventDefault;
+                    var formData=parseInt(document.querySelector("input").value);
+                    
+                    if(formData){
+                        head1.style.fontSize=formData + "px";
+                    }else{
+                        alert("You need to enter a number!");
+                    }
+                });
+
+
+
+
+        </script>
+    </body>
