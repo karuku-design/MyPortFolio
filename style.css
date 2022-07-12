@@ -11,8 +11,12 @@
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* navbar styling */
-.navbar{
+.navbar2{
     position:fixed;
     width:100%;
     padding: 30px 0;
@@ -20,43 +24,43 @@
     font-family: 'ubuntu',sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar2.sticky{
     padding: 15px 0;
     background: coral;
 }
-.navbar .max-width .logo a{
+.navbar2 .max-width .logo a{
     color: #fff;
     font-size:35px;
     font-weight: 600;
 }
-.navbar .max-width .logo a span{
+.navbar2 .max-width .logo a span{
  color: coral;
  transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar2.sticky .logo a span{
 color: #111;
 }
-.navbar .max-width{
+.navbar2 .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .menu li {
+.navbar2 .menu li {
     list-style: none;
     display: inline-block;
       
   }
-  .navbar .menu li a{
+  .navbar2 .menu li a{
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition:color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar2 .menu li a:hover{
 color: coral;
 }
-.navbar.sticky .menu li a:hover{
+.navbar2.sticky .menu li a:hover{
     color: #111;
     }
 
@@ -256,59 +260,7 @@ margin: 10px 0 7px 0;
 .skills .skills-content .column .right{
    display: flex;
 }
-/* progress circles */
-.skill{
-   position: relative; 
-   display:flex;
-   margin-bottom: 10px;
-}
- /* .skill{
-    width: calc(50% - 20px);
-} */
-.outer{
-    height: 160px;
-   width: 160px;
-   border-radius: 50%;
-   padding: 20px;
-   box-shadow:  6px 6px 10px -1px rgba(0,0,0,0.15),
-   -6px -6px 10px -1px rgba(255,255,255,0.7); 
-}
-.inner{
-    height: 120px;
-   width: 120px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow:  inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-   inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-   -0.5px -0.5px 0px rgba(255,255,255,1),
-   0.5px 0.5px 0px rgba(0,0,0,0.15),
-   0px 12px 10px -10px rgba(0,0,0,0.05); 
-}
-#number{
-    font-weight: 600;
-    color: #555;
-}
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-   
-}
-svg{
-    position: absolute ;
-    top: 0;
-    left: 0;
-} 
-@keyframes anim {
-    100%{
-        stroke-dashoffset: 94;  
-    }
-}
+
 
 /* experience styling */
 .experience .title::after{
@@ -349,7 +301,7 @@ svg{
     .menu-btn i.active:before{
             content: "\f00d";
         }
-    .navbar .menu{
+    .navbar2 .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -360,13 +312,13 @@ svg{
         padding-top: 80px;
         transition: all 0.3s ease;
     } 
-    .navbar .menu.active{
+    .navbar2 .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbar2 .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar2 .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
