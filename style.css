@@ -565,7 +565,7 @@ footer i{
     .about .about-content .right{
         flex: 100%;
     }
-    .projects .projects-content .card{
+    .projects .projects-content .card2{
         width: calc(50%-10px);
         margin-bottom: 20px;
     }
@@ -596,7 +596,7 @@ footer i{
     .home .home-content a{
         font-size: 20px;
     }
-    .projects .projects-content .card,
+    .projects .projects-content .card2,
     .skills .skills-content .column{
         width: 100%;
     }
@@ -612,6 +612,24 @@ footer i{
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
     }
 }
 

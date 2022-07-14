@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar2.menu').toggleClass("active");
+        $('.navbar2 .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 });
